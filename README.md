@@ -1,4 +1,4 @@
-# COMP6234-D3-Brexit
+# Brexit Analysis
 
 This web application demonstrates the power of D3.js as a charting library for data sets. 
 
