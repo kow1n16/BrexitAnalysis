@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>COMP6234 Brexit Analysis</title>
+	
+	<!-- scripts -->
+
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>-->
+	<!--<![endif]-->
+	<script src="bower_components/jquery.nav.js"></script>
+
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<!--<script src="http://code.jquery.com/jquery-latest.js"></script>-->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.1.0/topojson.min.js"></script>
+
+    <script src="js/bootstrap.js"></script>
+
+	<!-- css -->
+	<link href="css/demo.css" rel="stylesheet" media="all">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/unemp.css" rel="stylesheet">
+
+	<div class="header"></div>
+</head>
+
+<body>
+  	<h1>What's Really The Effect Of Brexit?</h1>
+  	<h2>COMP6234 - January 11, 2017 </h2>
+
+	<!-- Introduction -->
+  	<div id="intro">
+	  	Below are articles published by different news outlets describing how Brexit has had a direct negative impact on these wide range of economic issues. The value of the pound has dropped significantly by about 18% to a 30-year low since the referendum result. However, have these economic issues such as retail sales and house prices been negatively affected and so soon after the result? Scroll down to see how data collected from the Office for National Statistics (ONS) contradicts these articles by displaying real data. 
+  	</div>
+	
+
+	<!-- Article Bubble Chart -->
+	<div id="mainBubble">
+  		<script src=js/article_bubble_chart.js type="text/javascript"></script>
+ 	</div>
+  
+	<!-- Navigation panel -->
+	<ul id="nav">
+		<li><a href="#mainBubble">Introduction</a></li>
+		<li><a href="#chart1">Retail Sales</a></li>
+		<li><a href="#chart2">Trade</a></li>
+		<li><a href="#chart3">House Prices</a></li>
+		<li><a href="#chart4">Unemployment</a></li>
+		<li><a href="#chart5">Conclusion</a></li>
+	</ul>
+
+	<div id="container">
+		<div class="section" id="chart1">
+			<p>
+				Retail sales estimates are an important short-term indicator of consumer confidence and strength of consumer spending. 
+				Other factors also influence retail sales such as prices, weather, and the overall financial position of households. 
+				<!--In August, the volume of retail sales decreased by 0.2% compared with July 2016. -->
+				In 2016, growth was 1.6% for the following months (June, July and August) compared to the previous 3 months, and 5.5% higher than a year earlier. The line chart below for retail sales volumes continued to strengthen in November 2016, extending the positive trend seen since mid-2013.
+				By this observation of the graph, it can witness that Brexit has not had any immediate impact towards the volume of retail sales.
+			</p>
+			<script src=js/retailSales.js type="text/javascript"></script>
+			<p>
+				As stated in one of the articles above written by the Wall Street Journal - "U.K. retail sales declined in August after increasing in July, according to a survey by a trade group, adding to a mixed picture of consumer spending in the wake of Britain's decision to leave the EU."
+				<br>
+				<br>
+				This statement, although true is not a direct result of Brexit. Looking back until 2011, the data in the graph clearly shows a year upon year decline trend in retail sales in the month of August every year. Followed by a large increase in sales leading up to the Christmas holidays in September, October and November forming a cycle.
+				
+				This particular source has looked at a very small subset of data and reported a drop in retail sales as their opening statement in a news article to scare and misguide the public. Only the months July and August were analysed and therefore, created a statement which purposely tells a partial story.
+
+				Retail sales remain strong and within trend predictions following the result of the referendum, therefore, having no effect at this current point in time.
+				<!--In the coming months or after the leave date in March there will possibly be a decline in volume, however, until the leave date the trend is expected to remain positive.-->
+			</p>
+
+		</div>
+		<div class="section" id="chart2">
+		<h4>Oil trade</h4>
+			<!--<p>
+			UK trade shows the extent of import and export activity and is an important contributor to the overall economic growth of the UK. Trade is measured through both imports and exports of goods and/or services. The UK has long been running a trade deficit, meaning that overall it imports more than it exports. While the UK does sell more services abroad than are imported, this is not enough to counter the bigger deficit in the value of the goods sold abroad, compared with the value of the goods imported. The UK trade in goods export and import prices  (not Seasonally Adjusted, 2013 = 100)dating from September 2014 to September 2016 is shown in below .
+			</p>
+			<script src=js/oil.js type="text/javascript"></script>
+			<p>
+			Between Quarter 2 2016 and Quarter 3 2016, the deficit on trade in goods narrowed by £1.5 billion to £33.2 billion. Exports increased by £4.5 billion (6.1%) and imports increased by £3.1 billion (2.8%).
+			During that time, the UK’s trade in goods deficit with the EU widened by £0.4 billion to £23.8 billion as imports increased more than export. In the meantime, the UK’s trade in goods deficit with countries outside the EU narrowed by £1.9 billion to £9.4 billion, attributed to an increase in exports (5.9%).
+			</p>-->
+			
+			<p>
+			Oil trade is not only a part of national trade but also related to the economy of a county. The chart below shows the balance on UK trade in oil (the difference between the value of import and export), September 2014 to September 2016. The quarter after Brexit (July to September 2016), the deficit of the balance on trade in oil was £2.1 billion, increasing by £0.3 billion from Quarter 2 (April to June) 2016. Moreover, there is a tendency of the deficit growth for oil trade in UK after Brexit. In September 2016, the balance of trade in oil was in deficit by £1.0 billion, a widening of £0.3 billion from August 2016.
+			</p>
+			<script src=js/oil.js type="text/javascript"></script>
+			<p>
+			The deficit of oil trade in UK indeed increased after Brexit from the observation studied in the above line chart. The deficit in September increased £0.47 billion from the month before Brexit. However, it is not accurate to directly define Brexit as a result of the oil trade in the UK, because the balance of trade in oil has always oscillated since 2014. The sharp fluctuations also happened before Brexit such as January 2015 and May 2015. It is necessary to have a long-term observation about the stability of the balance of oil trade to know whether Brexit had an effect on the trade in oil.
+
+			</p>
+		</div>
+
+
+		<div class="section" id="chart3">
+	         <h4>House Prices</h4>
+	         <p>
+				According to the office of national statistics, average house prices in the UK have increased by 8.3% in the year to July 2016 (down from 9.7% in the year to June 2016), continuing the strong growth seen since the end of 2013.	
+			</p>
+	       <!--  <section id="map"></section>
+	         <section id="data_table"></section>-->
+
+	        <!-- <script src="js/map.js"></script>
+		      <script src="js/lads.js"></script>
+		    <script src="js/form.js"></script>-->
+		    <a href="map.html" class="myButton">Click here to view Map</a>
+		    <p>
+		    	The UK treasury predicted a heavy "shock" to the housing and property industry in the wake of Brexit but months down the line from the announcement. This may be true in the long term, but in the short term there does not seem to have been a major change in the housing prices. It is said that the housing market has held up so far due to the broader economy performing better than expected.</p>
+		    <h4 style = "font-size: 10px;">Office of National Statistics (ONS). (2016). House Price Index (Oct 2016). Retrieved from https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/previousReleases</h4>   
+   		</div>
+
+		<div class="section" id="chart4">
+		<h4>Unemployment</h4>
+			<p>
+			The health of the labour market is important because, in the long term, labour market trends will reflect changes to the overall economy. The chart below shows UK unemployment rate from 2014 to September 2016. It records the proportion of people aged from 16 to 64 who were not in work by the unit of 3 months. For 3 months to September 2016, the unemployment rate (the proportion of people aged from 16 to 64 who were not in work) was 4.8%, which is the lowest since 2005 and the decrement was 0.5% for a year earlier. Comparing with the last period (Jun-Aug), it reduced to 0.2%.
+			</p>
+		
+				<script src=js/unemployment.js type="text/javascript"></script>
+		<p>
+			As the line chart above shown, unemployment rate has a tendency of decreasing since 2014 with slight oscillation. After Brexit, the tendency of unemployment rate was effected and reached a low point, 4.8%, since 2005, which is definitely contrary to pervious prediction. It is hard to define whether the lowest unemployment rate is related to Brexit but we could say Brexit did not raise the unemployment so far.  
+			</p>
+		</div>
+
+		<!--<div class="section" id="chart5">
+			<h4>Conclusion</h4>
+			<div id="chart"></div>
+				<div id="clickerWrapper">
+					<div id="progress"></div>
+					<div id="clicker">Conclusion</div>
+				</div>
+				<div id="buttonWrapper">
+					<div id="buttonWrapperInner">
+						<div id="skip" class="sideButton">SKIP INTRO</div>
+						<div id="reset" class="sideButton">RESET</div>
+						<div id="link" class="sideButton"><a href="http://bl.ocks.org/nbremer/raw/94db779237655907b907/" target="_blank">GO TO SOURCE</a></div>
+					</div>
+				</div>
+			<script src=js/chord.js type="text/javascript"></script>
+		</div>-->
+		<div class="section" id="chart5">
+		<h4>Conclusion</h4>
+			<p>
+				In conclusion, after analysing these areas with data published from the Office of National Statistics, our study showed Brexit has yet to take a real national effect over the economical issues covered. Apart from the clear drop in value of sterling, the UK economy has remained stable throughout the inital shock of the vote.
+				<br><br>
+				The true aftermath is yet to unfold and potentially will do in the following months to come, especially in March 2017 once article 50 is officially triggered and subsequently in 2019 when the UK divides from the European Union.
+			</p>
+		</div>
+	</div>
+
+	<!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
+	<!--[if gt IE 8]><!-->
+
+	<script>
+		$(document).ready(function() {
+			$('#nav').onePageNav();
+		});
+	</script>
+</body>
+</html>

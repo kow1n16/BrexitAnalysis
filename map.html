@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+ <link href="css/styles.css" rel="stylesheet"/>
+<!-- <link href="css/map_style.css" rel="stylesheet"/>-->
+<!--<link href="css/map.css" rel="stylesheet"/>-->
+  <title>COMP6234 Coursework</title>
+  <div class="header"></div>
+</head>
+
+<body>
+  <h1>What's Really The Effect Of Brexit?</h1>
+
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.1.0/topojson.min.js"></script>
+
+  <div class="storyline-container">
+    <div id ="form" style="display:none">
+            <form id="choiceform">
+                <p> 
+                    <select name="top_level"  id="top_level">                       
+                        <option value="eng">England</option>
+                        <option value="wal">Wales</option>
+                        <option value="sco">Scotland</option>
+                        <option value="ni">Northern Ireland</option>
+                    </select>
+                    at the  
+                    <select name="lad" id="lad">
+                        <option value="national">National</option>
+                        <option disabled>──────────</option>
+                    </select>
+                    <select name="resolution" id="resolution">
+                        <option value="eer">European Electoral Regions</option>
+                        <option value="lad">Local Authority Districts</option>
+                        <option value="wpc">Westminster Parliamentary Constituencies</option>
+                        <option value="wards">Westminster Parliamentary Wards</option>
+                    </select>
+                </p>
+            </form>
+    </div>
+   <div id = "house_price_map">
+       <span style="font-family: arial;">House Prices per Region in 2016</span>
+      <section id="map"></section>
+      <section id="data_table"></section>
+
+
+
+      <script src="js/map.js"></script>
+      <script src="js/lads.js"></script>
+      <script src="js/form.js"></script>
+
+    </div>
+  </div>
+</body>
+</html>

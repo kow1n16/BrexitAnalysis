@@ -1,0 +1,297 @@
+path { 
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+h1{
+    font-family: "Arial Black", Gadget, sans-serif;
+	text-align: center;
+	margin-top: 40px;
+}
+h2{
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin-top: -10px;
+    font-weight:normal
+}
+
+
+body{
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-align: center;
+}
+
+#intro{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 17%;
+    padding-right: 17%;
+}
+
+p{
+    text-align: center;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+
+#map{
+    text-align: center;
+}
+
+.header{
+    width: 100.8%;
+    background-color: rgb(63,96,127);
+    height: 100px;
+    margin-top: -10px;
+    margin-left: -10px;
+     }
+
+.area{ 
+    fill: #f8e5c2;
+    stroke: none;
+}
+
+.boundary {
+    fill: none;
+    stroke: #777;
+}
+
+.selected {
+    fill: #ff7f7f;
+    stroke: #777;
+    stroke-dasharray: 2,2;
+    stroke-linejoin: round;
+}
+
+#mainBubble {
+    box-shadow: 0 0 4px rgba(0,0,0,0);
+    font: 10px sans-serif;
+    }
+             
+#mainBubble svg {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto; 
+}
+
+#mainBubble circle.topBubble {
+    fill: #aaa;
+    stroke: #666;
+    stroke-width: 1.5px;
+}
+
+#chart1 {
+    margin-top: -8%;
+}
+
+.bar {
+    fill: steelblue;
+    fill-opacity: .9;
+}
+/*#sort {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}*/
+
+#chart5 {
+    overflow: hidden;
+    margin: 0;
+    font-size: 14px;
+    /* font-family: 'Raleway', sans-serif;*/
+    text-align: center;
+}
+
+#clickerWrapper {
+    top: 0;
+    z-index: 1;
+    display: block;
+    position: relative;
+    width: 640px;
+    /*padding-top: 5px;*/
+    visibility: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#clicker {
+    z-index: 1;
+    display: block;
+    /* font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    color: #363636;
+    position: relative;
+    /*width: 80px;*/
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    border: 1px solid;
+    border-color: #363636;
+    cursor: pointer;
+}
+
+#progress {
+    z-index: 1;
+    display: block;
+    position: relative;
+    width: 40%;
+    height: 6px;
+    margin: 10px auto;
+    visibility: hidden;
+}
+
+#buttonWrapper{
+    z-index: 1;
+    display: block;
+    font-family: Oswald;
+    font-size: 14px;
+    font-weight: 300;
+    color: #6B6B6B;
+    position: relative;
+    width: 640px;
+    text-align: center;   
+    overflow: hidden; 
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#buttonWrapperInner{
+    position: relative;
+    width: 300px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+
+#skip{
+    width: 90px;
+    cursor: pointer;  
+    float: left;  
+    text-align: left;
+}
+
+#reset{
+    width: 110px;
+    cursor: pointer;  
+    float: left;            
+}
+
+#link{
+    width: 100px;
+    cursor: pointer;  
+    float: left;  
+    text-align: right;
+}
+
+line {
+    stroke: #000;
+    stroke-width: 1.px;
+}
+
+.titles{
+    font-size: 14px;
+}
+
+.explanation{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+path.chord {
+    fill-opacity: .80;
+}
+
+a {
+    text-decoration: none;
+    color: #6B6B6B;
+}
+.myButton {
+    -moz-box-shadow:inset 0px 1px 0px 0px #bee2f9;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #bee2f9;
+    box-shadow:inset 0px 1px 0px 0px #bee2f9;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #63b8ee), color-stop(1, #468ccf));
+    background:-moz-linear-gradient(top, #63b8ee 5%, #468ccf 100%);
+    background:-webkit-linear-gradient(top, #63b8ee 5%, #468ccf 100%);
+    background:-o-linear-gradient(top, #63b8ee 5%, #468ccf 100%);
+    background:-ms-linear-gradient(top, #63b8ee 5%, #468ccf 100%);
+    background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#63b8ee', endColorstr='#468ccf',GradientType=0);
+    background-color:#63b8ee;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #3866a3;
+    display:inline-block;
+    cursor:pointer;
+    color:#14396a;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #7cacde;
+}
+.myButton:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #468ccf), color-stop(1, #63b8ee));
+    background:-moz-linear-gradient(top, #468ccf 5%, #63b8ee 100%);
+    background:-webkit-linear-gradient(top, #468ccf 5%, #63b8ee 100%);
+    background:-o-linear-gradient(top, #468ccf 5%, #63b8ee 100%);
+    background:-ms-linear-gradient(top, #468ccf 5%, #63b8ee 100%);
+    background:linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#468ccf', endColorstr='#63b8ee',GradientType=0);
+    background-color:#468ccf;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    font: 11px/24px Verdana, Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 320px;
+    }
+
+th {
+    padding: 0 0.5em;
+    text-align: left;
+    }
+
+tr.yellow td {
+    border-top: 1px solid #FB7A31;
+    border-bottom: 1px solid #FB7A31;
+    background: #FFC;
+    }
+
+td {
+    border-bottom: 1px solid #CCC;
+    padding: 0 0.5em;
+    }
+
+td:first-child {
+    width: 190px;
+    }
+
+td+td {
+    border-left: 1px solid #CCC;
+    text-align: center;
+    }
